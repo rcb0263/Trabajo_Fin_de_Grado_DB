@@ -10,7 +10,6 @@ const comprobarFormarHora = (horario: string) => {
     const horarioSeparado = horario.split(':')
     const hora = Number(horarioSeparado[0]);
     const minuto = Number(horarioSeparado[1]);
-    console.log(horarioSeparado)
     if(horarioSeparado.length!=2 || hora < 1 || hora > 23 || minuto <0||minuto>59){
         return false;
     }else{
